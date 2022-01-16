@@ -285,8 +285,11 @@ section {
 
 .tutorialSection {
 	min-height: 80vh;
+	background-color: var(--mydarkgray);
 	color: var(--mydarkblue);
 	margin-bottom: 10rem;
+	padding-top: 1rem;
+	padding-bottom: 5rem;
 }
 
 .tutorialTitle {
@@ -294,7 +297,7 @@ section {
 	font-weight: bold;
 	margin-left: 10rem;
 	margin-bottom: 1rem;
-	margin-top: 2rem;
+	margin-top: 6rem;
 }
 
 .tutorialMain {
@@ -343,7 +346,7 @@ section {
 }
 
 .demoSection {
-	background-color: var(--mydarkgray);
+	background-color: white;
 	height: 80vh;
 }
 
@@ -443,4 +446,20 @@ footer {
 	font-size: 1.3rem;
 	display: grid;
 	place-content: center;
+}
+
+
+.featureTitle {
+	font-size: 2rem;
+	font-weight: bold;
+}
+
+.featureName {
+	margin-top: 1rem;
+	font-size: 1.2rem;
+	font-weight: bold;
+}
+
+.solutionCard  p { 
+	margin: 0;
 }

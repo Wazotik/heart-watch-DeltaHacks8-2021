@@ -198,28 +198,10 @@ const IndexPage = () => {
 					</div>
 				</div>
 
-				{/* <div className={styles.sectionTitle2}>
-					<h2>
-						What if your smart-watch could save your life in case of
-						a heart-attack?
-					</h2>
-				</div>
-				<div className={styles.sectionTitle3}>
-					<h2>
-						With the Heart-Watch app,{" "}
-						<span
-							style={{
-								borderBottom: "8px solid white",
-								fontWeight: "bold",
-							}}
-						>
-							you can
-						</span>
-					</h2>
-				</div> */}
 				<div className={styles.solutionMain}>
 					<div className={styles.solutionCard}>
-						<h4>Additional Information:</h4>
+						<div className={styles.featureTitle}>Features</div>
+						<div className={styles.featureName}>Heart Attack Warning System</div>
 						<p>
 							Based on our research, a heart attack can be
 							detected by analysing irregularities in heart beat
@@ -233,6 +215,7 @@ const IndexPage = () => {
 							services will be automatically called unless
 							cancelled by the user.
 						</p>
+						<div className={styles.featureName}>Cardiac Disease Risk</div>
 						<p>
 							In addition to the heart attack warning feature, the
 							app analyses all users' health data through a
@@ -251,6 +234,26 @@ const IndexPage = () => {
 			</section>
 			<div className={styles.spacer3}></div>
 
+			<section id="demo" className={styles.demoSection}>
+				<div className={styles.demoMain}>
+					<div className={styles.demoTitle}>
+						<h2>Demo</h2>
+					</div>
+					<div className={styles.tutorialVideo}>
+						<video
+							width={1000}
+							autoPlay={true}
+							loop={true}
+							controls={true}
+							playsInline
+							muted={true}
+						>
+							<source src={walkthroughVideo} type="video/mp4" />
+						</video>
+					</div>
+				</div>
+			</section>
+			
 			<section id="tutorial" className={styles.tutorialSection}>
 				<div className={styles.tutorialTitle}>
 					To get started either:
@@ -341,25 +344,6 @@ const IndexPage = () => {
 				</div>
 			</section>
 
-			<section id="demo" className={styles.demoSection}>
-				<div className={styles.demoMain}>
-					<div className={styles.demoTitle}>
-						<h2>Demo</h2>
-					</div>
-					<div className={styles.tutorialVideo}>
-						<video
-							width={1000}
-							autoPlay={true}
-							loop={true}
-							controls={true}
-							playsInline
-							muted={true}
-						>
-							<source src={walkthroughVideo} type="video/mp4" />
-						</video>
-					</div>
-				</div>
-			</section>
 
 			<section id="next" className={styles.nextSection}>
 				<div className={styles.nextTitle}>
@@ -391,7 +375,7 @@ const IndexPage = () => {
 						</p>
 						<p>
 							<b>Vision 2 - User-Friendly Health Insights</b>{" "}
-							(still writing) The information from smart-watch
+							The information from smart-watch
 							devices uncovers many secrets of one's health.
 							However, it isn't easy for the average user to make
 							insightful conclusions from all their data.
