@@ -13,7 +13,7 @@ const Header = () => {
 				</ul>
 			</nav>
 			<div className={styles.logo}>
-				<img src={require("../images/logo.png").default} alt="" />
+				<img src={require("../images/logo.gif").default} alt="" />
 			</div>
 
 			<div className={styles.getStartedButton}>
