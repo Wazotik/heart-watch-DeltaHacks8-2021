@@ -1,0 +1,91 @@
+
+.main {
+	background-color: var(--mylightgray);
+	padding: 2rem;
+	padding-top: 0.5rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.logo {
+	flex: 0;
+	display: flex;
+	justify-content: center;
+	font-size: 2rem;
+	font-weight: bold;
+	margin-left: 5rem;
+	margin-right: 2rem;
+}
+
+.logo > img {
+	width: 350px;
+}
+
+.navbar {
+	flex: 1;
+	display: flex;
+	justify-content: flex-start;
+}
+
+.navbar > ul {
+	list-style-type: none;
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.navbar > ul > li > a {
+	color: var(--mydarkblue);
+	text-decoration: none;
+	font-size: 1rem;
+	letter-spacing: 2px;
+}
+
+
+.getStartedButton {
+	flex: 1;
+	display: flex;
+	justify-content: flex-end;
+}
+
+.getStartedButton > a {
+	width: 180px;
+	height: 70px;
+	background-color: var(--mydarkblue);
+	outline: none;
+	border: none;
+	border-radius: 8px;
+	font-family: "Poppins", sans-serif;
+	cursor: pointer;
+	color: var(--mylightgray);
+	font-size: 1.3rem;
+	letter-spacing: 1px;
+	text-decoration: none;
+	display: grid;
+	place-content: center;
+}
+
+.navbar2 {
+	flex: 1;
+	display: flex;
+	justify-content: flex-start;
+}
+
+.navbar2 > ul {
+	list-style-type: none;
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.navbar2 > ul > li > a {
+	color: var(--mydarkblue);
+	text-decoration: none;
+	font-size: 1rem;
+	letter-spacing: 2px;
+}
+
+

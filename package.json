@@ -15,8 +15,11 @@
     "clean": "gatsby clean"
   },
   "dependencies": {
+    "@n8tb1t/use-scroll-position": "^2.0.3",
     "gatsby": "^4.5.2",
     "react": "^17.0.1",
-    "react-dom": "^17.0.1"
+    "react-dom": "^17.0.1",
+    "react-icons": "^4.3.1",
+    "react-player": "^2.9.0"
   }
 }
