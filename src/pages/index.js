@@ -4,7 +4,7 @@ import { useState } from "react";
 import Header from "../components/Header.js";
 import "../global-styles/basics.css";
 import * as styles from "./index-styles.module.css";
-import walkthroughVideo from "../images/walkthrough.mp4";
+import walkthroughVideo from "../images/app-walkthrough-updated.mp4";
 import demoVideo from "../images/demo-tutorial.mp4";
 import { BiUpArrowAlt } from "react-icons/bi";
 import { useScrollPosition } from "@n8tb1t/use-scroll-position";
@@ -82,6 +82,7 @@ const IndexPage = () => {
 				id="problem"
 				style={{
 					marginBottom: "10rem",
+					marginTop: "5rem",
 				}}
 			>
 				<div className={styles.sectionTitle}>
@@ -228,11 +229,20 @@ const IndexPage = () => {
 								Start by downloading the CSV file that contains
 								the data of about 70,000 people to train and
 								test the model. It can be downloaded from here
-								(Kaggle) or here (Google Drive)
+								<a href="https://www.kaggle.com/sulianova/cardiovascular-disease-dataset/code">
+									(Kaggle link)
+								</a>{" "}
+								or here{" "}
+								<a href="https://drive.google.com/file/d/1wLCqJm-IQWFXEAwE1VF0q4hLSnWKCWHl/view">
+									(Google Drive link)
+								</a>
 							</li>
 							<li>
 								Now that you have your file ready, go to the
-								google collab file
+								google collab file{" "}
+								<a href="https://colab.research.google.com/drive/1pnLjfUC6I0b1GqWdHXXGmdfFrxChU3yP?usp=sharing">
+									(Google Collab file link)
+								</a>
 							</li>
 							<li>From the 'Runtime' menu, select 'Run All'</li>
 							<li>
@@ -304,7 +314,8 @@ const IndexPage = () => {
 							Cooke G, Doust J, Sanders S. Is pulse palpation
 							helpful in detecting atrial fibrillation? A
 							systematic review. J Fam Pract. 2006
-							Feb;55(2):130-4. PMID: 16451780.
+							Feb;55(2):130-4. PMID: 16451780.{" "}
+							<a>https://pubmed.ncbi.nlm.nih.gov/16451780/</a>
 						</li>
 						<li>
 							Masip J, Gayà M, Páez J, Betbesé A, Vecilla F,
@@ -312,17 +323,20 @@ const IndexPage = () => {
 							of acute heart failure. Rev Esp Cardiol (Engl Ed).
 							2012 Oct;65(10):879-84. English, Spanish. doi:
 							10.1016/j.recesp.2012.02.022. Epub 2012 Jul 4. PMID:
-							22766468.
+							22766468.{" "}
+							<a>https://pubmed.ncbi.nlm.nih.gov/22766468/</a>
 						</li>
 						<li>
 							World Health Organisation. (2020, December 9). The
 							top 10 causes of death. Retrieved from
-							https://www.who.int/news-room/fact-sheets/detail/the-top-10-causes-of-death
+							<a>
+								https://www.who.int/news-room/fact-sheets/detail/the-top-10-causes-of-death
+							</a>
 						</li>
 						<li>
 							Centers for Disease Control and Prevention. (2021,
 							September 27). Heart Disease Facts. Retrieved from
-							https://www.cdc.gov/heartdisease/facts.htm
+							<a>https://www.cdc.gov/heartdisease/facts.htm</a>
 						</li>
 					</ul>
 				</div>
