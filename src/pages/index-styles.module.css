@@ -337,7 +337,6 @@ section {
 }
 
 .citationTitle {
-	margin-top: 5rem;
 	display: grid;
 	place-content: center;
 }
