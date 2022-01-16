@@ -24,7 +24,7 @@ main {
 }
 
 .infoContainer {
-	width: 70%; 
+	width: 90%; 
 	display: grid;
 	place-content: center;
 	grid-template-rows: 1fr 1fr;
@@ -44,6 +44,7 @@ main {
 .infoDesc {
 	font-weight: lighter;
 	font-size: 1.3rem;
+	width: 88%;
 }
 
 @keyframes fadeInUp {
