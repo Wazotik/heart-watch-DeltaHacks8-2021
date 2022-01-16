@@ -348,6 +348,60 @@ const IndexPage = () => {
 				</div>
 			</section>
 
+			<section id="next" className={styles.nextSection}>
+				<div className={styles.nextTitle}>
+					<h2>What's next?</h2>
+				</div>
+				<div className={styles.nextMain}>
+					<div className={styles.nextText}>
+						<p>
+							<b>Vision 1 - Increasingly Accurate Predictions</b> There
+							is already an abundance of research and data related
+							to the risk factors of cardiac disease. According to
+							our reading, pulse detection has high sensitivity
+							but low specificity for heart attack detection,
+							while pulse oximetry has low sensitivity but high
+							specificity. If we run both of these metrics through
+							a machine learning algorithm, we can expect higher
+							sensitivity and specificity rates. Smart-watches
+							measure more than just these two metrics. New models
+							can also, when prompted, collect ECG and
+							blood-pressure information, all of which may improve
+							predictions. As smart-watches become more popular
+							and powerful, we can expect larger data pools for
+							our machine learning algorithms. Additionally, as
+							research in artificial intelligence grows, we can
+							improve the way our algorithms are constructed.
+							Overall, our predictions will become increasingly
+							accurate, and we may uncover more connections around
+							risk factors of cardiac disease
+						</p>
+						<p>
+							<b>Vision 2 - User-Friendly Health Insights</b>  (still
+							writing) The information from smart-watch devices
+							uncovers many secrets of one's health. However, it
+							isn't easy for the average user to make insightful
+							conclusions from all their data. Additionally,
+							existing UIs for accessing health data is quite
+							detailed and complex. The Heart-Watch app will use
+							AI algorithms to analyse users' health data and
+							present it through engaging and educational
+							graphical content. It is known that{" "}
+							<a target="_blank" href="https://www.nia.nih.gov/health/heart-health-and-aging#:~:text=Adults%20age%2065%20and%20older,risk%20of%20developing%20cardiovascular%20disease">
+								adults age 65 and older are more likely than
+								younger people to suffer from cardiovascular
+								disease
+							</a>
+							. Heart-Watch UI is designed to be incredibly
+							accessible and easy to use for older adults. These
+							sophisticated data analyses can predict cardiac
+							disease and instil early preventative treatment, all
+							in all, saving lives.
+						</p>
+					</div>
+				</div>
+			</section>
+
 			<section id="citations" className={styles.citationSection}>
 				<div className={styles.citationMain}>
 					<div className={styles.citationTitle}>
