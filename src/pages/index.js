@@ -11,9 +11,9 @@ import { useScrollPosition } from "@n8tb1t/use-scroll-position";
 import { GiDeathSkull } from "react-icons/gi";
 import { RiTimerFill } from "react-icons/ri";
 
-import { BsDownload } from "react-icons/bs"
-import { SiFitbit } from "react-icons/si"
-import { GiCheckMark } from "react-icons/gi";
+import { BsDownload } from "react-icons/bs";
+import { SiFitbit } from "react-icons/si";
+import { GiCheckMark, GiNightSleep } from "react-icons/gi";
 
 const IndexPage = () => {
 	const [scrollPositionY, setScrollPositionY] = useState(0);
@@ -90,7 +90,7 @@ const IndexPage = () => {
 				}}
 			>
 				<div className={styles.sectionTitle}>
-					<h2>Why Care?</h2>
+					<h2>Why should you care?</h2>
 				</div>
 				<div className={styles.problemMain}>
 					<div className={styles.problemCard}>
@@ -129,10 +129,23 @@ const IndexPage = () => {
 						</div>
 					</div>
 					<div className={styles.problemCard}>
+						<div className={styles.sleepIcon}>
+							<GiNightSleep size={230} />
+						</div>
 						<div className={styles.problemText}>
-							According to the World Health Organization, the
-							world's leading cause of death is{" "}
-							<span>heart disease</span>
+							According to Roberto Manfredini, professor of
+							internal medicine at the University of Ferrara in
+							Italy,{" "}
+							<span
+								style={{
+									color: "var(--mydarkred)",
+									fontWeight: "bold",
+								}}
+							>
+								the most dangerous times for a heart attack to
+								occur are the morning and the last phase of
+								sleep.
+							</span>
 						</div>
 					</div>
 				</div>
@@ -355,39 +368,42 @@ const IndexPage = () => {
 				<div className={styles.nextMain}>
 					<div className={styles.nextText}>
 						<p>
-							<b>Vision 1 - Increasingly Accurate Predictions</b> There
-							is already an abundance of research and data related
-							to the risk factors of cardiac disease. According to
-							our reading, pulse detection has high sensitivity
-							but low specificity for heart attack detection,
-							while pulse oximetry has low sensitivity but high
-							specificity. If we run both of these metrics through
-							a machine learning algorithm, we can expect higher
-							sensitivity and specificity rates. Smart-watches
-							measure more than just these two metrics. New models
-							can also, when prompted, collect ECG and
-							blood-pressure information, all of which may improve
-							predictions. As smart-watches become more popular
-							and powerful, we can expect larger data pools for
-							our machine learning algorithms. Additionally, as
-							research in artificial intelligence grows, we can
-							improve the way our algorithms are constructed.
-							Overall, our predictions will become increasingly
-							accurate, and we may uncover more connections around
-							risk factors of cardiac disease
+							<b>Vision 1 - Increasingly Accurate Predictions</b>{" "}
+							There is already an abundance of research and data
+							related to the risk factors of cardiac disease.
+							According to our reading, pulse detection has high
+							sensitivity but low specificity for heart attack
+							detection, while pulse oximetry has low sensitivity
+							but high specificity. If we run both of these
+							metrics through a machine learning algorithm, we can
+							expect higher sensitivity and specificity rates.
+							Smart-watches measure more than just these two
+							metrics. New models can also, when prompted, collect
+							ECG and blood-pressure information, all of which may
+							improve predictions. As smart-watches become more
+							popular and powerful, we can expect larger data
+							pools for our machine learning algorithms.
+							Additionally, as research in artificial intelligence
+							grows, we can improve the way our algorithms are
+							constructed. Overall, our predictions will become
+							increasingly accurate, and we may uncover more
+							connections around risk factors of cardiac disease
 						</p>
 						<p>
-							<b>Vision 2 - User-Friendly Health Insights</b>  (still
-							writing) The information from smart-watch devices
-							uncovers many secrets of one's health. However, it
-							isn't easy for the average user to make insightful
-							conclusions from all their data. Additionally,
-							existing UIs for accessing health data is quite
-							detailed and complex. The Heart-Watch app will use
-							AI algorithms to analyse users' health data and
-							present it through engaging and educational
+							<b>Vision 2 - User-Friendly Health Insights</b>{" "}
+							(still writing) The information from smart-watch
+							devices uncovers many secrets of one's health.
+							However, it isn't easy for the average user to make
+							insightful conclusions from all their data.
+							Additionally, existing UIs for accessing health data
+							is quite detailed and complex. The Heart-Watch app
+							will use AI algorithms to analyse users' health data
+							and present it through engaging and educational
 							graphical content. It is known that{" "}
-							<a target="_blank" href="https://www.nia.nih.gov/health/heart-health-and-aging#:~:text=Adults%20age%2065%20and%20older,risk%20of%20developing%20cardiovascular%20disease">
+							<a
+								target="_blank"
+								href="https://www.nia.nih.gov/health/heart-health-and-aging#:~:text=Adults%20age%2065%20and%20older,risk%20of%20developing%20cardiovascular%20disease"
+							>
 								adults age 65 and older are more likely than
 								younger people to suffer from cardiovascular
 								disease
@@ -414,7 +430,7 @@ const IndexPage = () => {
 							systematic review. J Fam Pract. 2006
 							Feb;55(2):130-4. PMID: 16451780.{" "}
 							<a href="https://pubmed.ncbi.nlm.nih.gov/16451780/">
-								https://pubmed.ncbi.nlm.nih.gov/16451780/
+								 https://pubmed.ncbi.nlm.nih.gov/16451780/
 							</a>
 						</li>
 						<li>
@@ -425,22 +441,27 @@ const IndexPage = () => {
 							10.1016/j.recesp.2012.02.022. Epub 2012 Jul 4. PMID:
 							22766468.{" "}
 							<a href="https://pubmed.ncbi.nlm.nih.gov/22766468/">
-								https://pubmed.ncbi.nlm.nih.gov/22766468/
+								 https://pubmed.ncbi.nlm.nih.gov/22766468/
 							</a>
 						</li>
 						<li>
 							World Health Organisation. (2020, December 9). The
 							top 10 causes of death. Retrieved from
 							<a href="https://www.who.int/news-room/fact-sheets/detail/the-top-10-causes-of-death">
-								https://www.who.int/news-room/fact-sheets/detail/the-top-10-causes-of-death
+								 https://www.who.int/news-room/fact-sheets/detail/the-top-10-causes-of-death
 							</a>
 						</li>
 						<li>
 							Centers for Disease Control and Prevention. (2021,
 							September 27). Heart Disease Facts. Retrieved from
 							<a href="https://www.cdc.gov/heartdisease/facts.htm">
-								https://www.cdc.gov/heartdisease/facts.htm
+								 https://www.cdc.gov/heartdisease/facts.htm
 							</a>
+						</li>
+						<li>
+							Blue, L. (2008, July 22). When Are You Most Likely
+							to Have a Heart Attack? Retrieved from
+							<a href="http://content.time.com/time/health/article/0,8599,1825044,00.html">http://content.time.com/time/health/article/0,8599,1825044,00.html</a>
 						</li>
 					</ul>
 				</div>
