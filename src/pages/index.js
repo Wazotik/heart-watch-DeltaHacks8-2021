@@ -11,6 +11,10 @@ import { useScrollPosition } from "@n8tb1t/use-scroll-position";
 import { GiDeathSkull } from "react-icons/gi";
 import { RiTimerFill } from "react-icons/ri";
 
+import { BsDownload } from "react-icons/bs"
+import { SiFitbit } from "react-icons/si"
+import { GiCheckMark } from "react-icons/gi";
+
 const IndexPage = () => {
 	const [scrollPositionY, setScrollPositionY] = useState(0);
 	const [topButtonHovered, setTopButtonHovered] = useState(false);
@@ -65,8 +69,8 @@ const IndexPage = () => {
 						Heart attacks are one of the most common causes of
 						deaths today. Heart-Watch puts your health first by
 						using your smart watch to let you know if you're at a
-						risk for cardiac disease and/or predicting whether
-						you're having a heart attack during sleep.
+						risk for cardiac disease and predicting whether you're
+						having a heart attack during sleep.
 					</div>
 				</div>
 				<div className={styles.phoneImage}>
@@ -153,7 +157,35 @@ const IndexPage = () => {
 						How it works
 					</h2>
 				</div>
-				<div className={styles.sectionTitle2}>
+
+				<div className={styles.steps}>
+					<div className={styles.step}>
+						<div className={styles.downloadIcon}>
+							<BsDownload size={150} color="" />
+						</div>
+						<div className={styles.downloadText}>
+							Download and open our app
+						</div>
+					</div>
+					<div className={styles.step}>
+						<div className={styles.fitbitIcon}>
+							<SiFitbit size={150} color="#00B0B9" />
+						</div>
+						<div className={styles.fitbitText}>
+							Connect to the FitBit app
+						</div>
+					</div>
+					<div className={styles.step}>
+						<div className={styles.checkmarkIcon}>
+							<GiCheckMark size={150} color="#008000" />
+						</div>
+						<div className={styles.checkmarkText}>
+							You're good to go!
+						</div>
+					</div>
+				</div>
+
+				{/* <div className={styles.sectionTitle2}>
 					<h2>
 						What if your smart-watch could save your life in case of
 						a heart-attack?
@@ -171,34 +203,37 @@ const IndexPage = () => {
 							you can
 						</span>
 					</h2>
-				</div>
+				</div> */}
 				<div className={styles.solutionMain}>
 					<div className={styles.solutionCard}>
-						Based on our research, a heart attack can be detected by
-						analysing irregularities in heart beat and blood oxygen
-						level. The Heart-Watch app analyzes all the user's
-						health data, including pulse irregularities and blood
-						oxygen levels, from the user's smart-watch. This
-						information is processed through a sophisticated
-						machine-learning algorithm to predict if the user is
-						having a heart attack in their sleep. In case of a heart
-						attack, emergency services will be automatically called
-						unless cancelled by the user.
+						<h4>Additional Information:</h4>
+						<p>
+							Based on our research, a heart attack can be
+							detected by analysing irregularities in heart beat
+							and blood oxygen level. The Heart-Watch app analyzes
+							all the user's health data, including pulse
+							irregularities and blood oxygen levels, from the
+							user's smart-watch. This information is processed
+							through a sophisticated machine-learning algorithm
+							to predict if the user is having a heart attack in
+							their sleep. In case of a heart attack, emergency
+							services will be automatically called unless
+							cancelled by the user.
+						</p>
+						<p>
+							In addition to the heart attack warning feature, the
+							app analyses all users' health data through a
+							machine-learning algorithm to identify their risk of
+							cardiovascular disease. The user may download this
+							analysis to share with a healthcare professional.
+							This analysis may help people identify early
+							symptoms of cardiovascular disease and prompt
+							preventative treatment. We currently have a working
+							prototype of this machine learning algorithm in
+							Python, which averages about 71% accuracy. We expect
+							its accuracy to rise to 97% as we collect more data.
+						</p>
 					</div>
-					<div className={styles.solutionCard}>
-						In addition to the heart attack warning feature, the app
-						analyses all users' health data through a
-						machine-learning algorithm to identify their risk of
-						cardiovascular disease. The user may download this
-						analysis to share with a healthcare professional. This
-						analysis may help people identify early symptoms of
-						cardiovascular disease and prompt preventative
-						treatment. We currently have a working prototype of this
-						machine learning algorithm in Python, which averages
-						about 71% accuracy. We expect its accuracy to rise to
-						97% as we collect more data.
-					</div>
-					{/* <div className={styles.solutionCard}></div> */}
 				</div>
 			</section>
 			<div className={styles.spacer3}></div>
@@ -229,18 +264,27 @@ const IndexPage = () => {
 								Start by downloading the CSV file that contains
 								the data of about 70,000 people to train and
 								test the model. It can be downloaded from here
-								<a href="https://www.kaggle.com/sulianova/cardiovascular-disease-dataset/code">
+								<a
+									target="_blank"
+									href="https://www.kaggle.com/sulianova/cardiovascular-disease-dataset/code"
+								>
 									(Kaggle link)
 								</a>{" "}
 								or here{" "}
-								<a href="https://drive.google.com/file/d/1wLCqJm-IQWFXEAwE1VF0q4hLSnWKCWHl/view">
+								<a
+									target="_blank"
+									href="https://drive.google.com/file/d/1wLCqJm-IQWFXEAwE1VF0q4hLSnWKCWHl/view"
+								>
 									(Google Drive link)
 								</a>
 							</li>
 							<li>
 								Now that you have your file ready, go to the
 								google collab file{" "}
-								<a href="https://colab.research.google.com/drive/1pnLjfUC6I0b1GqWdHXXGmdfFrxChU3yP?usp=sharing">
+								<a
+									target="_blank"
+									href="https://colab.research.google.com/drive/1pnLjfUC6I0b1GqWdHXXGmdfFrxChU3yP?usp=sharing"
+								>
 									(Google Collab file link)
 								</a>
 							</li>
@@ -315,7 +359,9 @@ const IndexPage = () => {
 							helpful in detecting atrial fibrillation? A
 							systematic review. J Fam Pract. 2006
 							Feb;55(2):130-4. PMID: 16451780.{" "}
-							<a>https://pubmed.ncbi.nlm.nih.gov/16451780/</a>
+							<a href="https://pubmed.ncbi.nlm.nih.gov/16451780/">
+								https://pubmed.ncbi.nlm.nih.gov/16451780/
+							</a>
 						</li>
 						<li>
 							Masip J, Gayà M, Páez J, Betbesé A, Vecilla F,
@@ -324,19 +370,23 @@ const IndexPage = () => {
 							2012 Oct;65(10):879-84. English, Spanish. doi:
 							10.1016/j.recesp.2012.02.022. Epub 2012 Jul 4. PMID:
 							22766468.{" "}
-							<a>https://pubmed.ncbi.nlm.nih.gov/22766468/</a>
+							<a href="https://pubmed.ncbi.nlm.nih.gov/22766468/">
+								https://pubmed.ncbi.nlm.nih.gov/22766468/
+							</a>
 						</li>
 						<li>
 							World Health Organisation. (2020, December 9). The
 							top 10 causes of death. Retrieved from
-							<a>
+							<a href="https://www.who.int/news-room/fact-sheets/detail/the-top-10-causes-of-death">
 								https://www.who.int/news-room/fact-sheets/detail/the-top-10-causes-of-death
 							</a>
 						</li>
 						<li>
 							Centers for Disease Control and Prevention. (2021,
 							September 27). Heart Disease Facts. Retrieved from
-							<a>https://www.cdc.gov/heartdisease/facts.htm</a>
+							<a href="https://www.cdc.gov/heartdisease/facts.htm">
+								https://www.cdc.gov/heartdisease/facts.htm
+							</a>
 						</li>
 					</ul>
 				</div>

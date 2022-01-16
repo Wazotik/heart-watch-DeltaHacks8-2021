@@ -133,12 +133,11 @@ section {
 }
 
 .sectionTitle > h2 {
-	font-size: 3rem;
+	font-size: 5rem;
 	margin-top: 1rem;
 	margin-bottom: 3rem;
 	font-weight: bold;
 	letter-spacing: 2px;
-	text-transform: uppercase;
 }
 
 .sectionTitle2 {
@@ -229,7 +228,6 @@ section {
 
 .solutionCard {
 	width: 70%;
-	height: 200px;
 	margin-bottom: 2rem;
 	background-color: var(--mylightgray);
 	color: var(--mydarkblue);
@@ -237,9 +235,52 @@ section {
 	padding: 2rem;
 	display: grid;
 	place-content: center;
-	text-align: center;
-	font-size: 1.5rem;
+	text-align: left;
+	font-size: 1.3rem;
+	box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 }
+
+.solutionCard > h4 {
+	margin: 0;
+	font-size: 2rem;
+}
+
+.solutionCard > p {
+	margin-bottom: 0.5rem;
+	margin-top: 0.5rem;
+}
+
+.steps {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	margin-top: 3rem;
+	margin-bottom: 3rem;
+}
+
+.step {
+	width: 300px;
+	height: 300px;
+	background-color: var(--mylightgray);
+	border-radius: 8px;
+	margin-left: 6rem;
+	margin-right: 6rem;
+	color: var(--mydarkblue);
+	box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	text-align: center;
+}
+
+.downloadText, .fitbitText, .checkmarkText {
+	font-size: 1.2rem;
+}
+
+
+
+
 
 
 .tutorialSection {
