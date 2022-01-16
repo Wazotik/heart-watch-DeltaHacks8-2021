@@ -49,7 +49,7 @@ const IndexPage = () => {
 								color: "var(--mylightred)",
 							}}
 						>
-							Heart.
+							heart.
 						</span>
 						<br />
 						It's telling you{" "}
