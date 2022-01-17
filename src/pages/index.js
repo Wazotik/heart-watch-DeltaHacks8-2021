@@ -4,8 +4,8 @@ import { useState } from "react";
 import Header from "../components/Header.js";
 import "../global-styles/basics.css";
 import * as styles from "./index-styles.module.css";
-import walkthroughVideo from "../images/app-walkthrough-updated.mp4";
-import demoVideo from "../images/demo-tutorial.mp4";
+import walkthroughVideo from "../assets/app-walkthrough-updated.mp4";
+import demoVideo from "../assets/demo-tutorial.mp4";
 import { BiUpArrowAlt } from "react-icons/bi";
 import { useScrollPosition } from "@n8tb1t/use-scroll-position";
 import { GiDeathSkull } from "react-icons/gi";
@@ -201,7 +201,9 @@ const IndexPage = () => {
 				<div className={styles.solutionMain}>
 					<div className={styles.solutionCard}>
 						<div className={styles.featureTitle}>Features</div>
-						<div className={styles.featureName}>Heart Attack Warning System</div>
+						<div className={styles.featureName}>
+							Heart Attack Warning System
+						</div>
 						<p>
 							Based on our research, a heart attack can be
 							detected by analysing irregularities in heart beat
@@ -215,7 +217,9 @@ const IndexPage = () => {
 							services will be automatically called unless
 							cancelled by the user.
 						</p>
-						<div className={styles.featureName}>Cardiac Disease Risk</div>
+						<div className={styles.featureName}>
+							Cardiac Disease Risk
+						</div>
 						<p>
 							In addition to the heart attack warning feature, the
 							app analyses all users' health data through a
@@ -253,7 +257,7 @@ const IndexPage = () => {
 					</div>
 				</div>
 			</section>
-			
+
 			<section id="tutorial" className={styles.tutorialSection}>
 				<div className={styles.tutorialTitle}>
 					To get started either:
@@ -344,7 +348,6 @@ const IndexPage = () => {
 				</div>
 			</section>
 
-
 			<section id="next" className={styles.nextSection}>
 				<div className={styles.nextTitle}>
 					<h2>What's next?</h2>
@@ -374,16 +377,16 @@ const IndexPage = () => {
 							connections around risk factors of cardiac disease
 						</p>
 						<p>
-							<b>Vision 2 - User-Friendly Health Insights</b>{" "}
-							The information from smart-watch
-							devices uncovers many secrets of one's health.
-							However, it isn't easy for the average user to make
-							insightful conclusions from all their data.
-							Additionally, existing UIs for accessing health data
-							is quite detailed and complex. The Heart-Watch app
-							will use AI algorithms to analyse users' health data
-							and present it through engaging and educational
-							graphical content. It is known that{" "}
+							<b>Vision 2 - User-Friendly Health Insights</b> The
+							information from smart-watch devices uncovers many
+							secrets of one's health. However, it isn't easy for
+							the average user to make insightful conclusions from
+							all their data. Additionally, existing UIs for
+							accessing health data is quite detailed and complex.
+							The Heart-Watch app will use AI algorithms to
+							analyse users' health data and present it through
+							engaging and educational graphical content. It is
+							known that{" "}
 							<a
 								target="_blank"
 								href="https://www.nia.nih.gov/health/heart-health-and-aging#:~:text=Adults%20age%2065%20and%20older,risk%20of%20developing%20cardiovascular%20disease"
@@ -414,7 +417,7 @@ const IndexPage = () => {
 							systematic review. J Fam Pract. 2006
 							Feb;55(2):130-4. PMID: 16451780.{" "}
 							<a href="https://pubmed.ncbi.nlm.nih.gov/16451780/">
-								 https://pubmed.ncbi.nlm.nih.gov/16451780/
+								https://pubmed.ncbi.nlm.nih.gov/16451780/
 							</a>
 						</li>
 						<li>
@@ -425,27 +428,43 @@ const IndexPage = () => {
 							10.1016/j.recesp.2012.02.022. Epub 2012 Jul 4. PMID:
 							22766468.{" "}
 							<a href="https://pubmed.ncbi.nlm.nih.gov/22766468/">
-								 https://pubmed.ncbi.nlm.nih.gov/22766468/
+								https://pubmed.ncbi.nlm.nih.gov/22766468/
 							</a>
 						</li>
 						<li>
 							World Health Organisation. (2020, December 9). The
 							top 10 causes of death. Retrieved from
 							<a href="https://www.who.int/news-room/fact-sheets/detail/the-top-10-causes-of-death">
-								 https://www.who.int/news-room/fact-sheets/detail/the-top-10-causes-of-death
+								https://www.who.int/news-room/fact-sheets/detail/the-top-10-causes-of-death
 							</a>
 						</li>
 						<li>
 							Centers for Disease Control and Prevention. (2021,
 							September 27). Heart Disease Facts. Retrieved from
 							<a href="https://www.cdc.gov/heartdisease/facts.htm">
-								 https://www.cdc.gov/heartdisease/facts.htm
+								https://www.cdc.gov/heartdisease/facts.htm
 							</a>
 						</li>
 						<li>
 							Blue, L. (2008, July 22). When Are You Most Likely
 							to Have a Heart Attack? Retrieved from
-							<a href="http://content.time.com/time/health/article/0,8599,1825044,00.html">http://content.time.com/time/health/article/0,8599,1825044,00.html</a>
+							<a href="http://content.time.com/time/health/article/0,8599,1825044,00.html">
+								http://content.time.com/time/health/article/0,8599,1825044,00.html
+							</a>
+						</li>
+						<li>
+							Hayashi, M., Shimizu, W., & Albert, C. M. (2015).
+							The spectrum of epidemiology underlying sudden
+							cardiac death. Circulation research, 116(12),
+							1887–1906.
+							https://doi.org/10.1161/CIRCRESAHA.116.304521
+						</li>
+						<li>
+							Zheng, J., Zheng, D., Su, T., & Cheng, J. (2018).
+							Sudden Unexplained Nocturnal Death Syndrome: The
+							Hundred Years' Enigma. Journal of the American Heart
+							Association, 7(5), e007837.
+							https://doi.org/10.1161/JAHA.117.007837
 						</li>
 					</ul>
 				</div>
