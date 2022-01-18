@@ -75,7 +75,7 @@ const IndexPage = () => {
 				</div>
 				<div className={styles.phoneImage}>
 					<img
-						src={require("../images/app-img.png").default}
+						src={require("../assets/app-img.png").default}
 						alt=""
 					/>
 				</div>

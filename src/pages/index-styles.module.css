@@ -101,7 +101,7 @@ main {
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
-	background-image: url("../images/wave-haikei-gray.svg");
+	background-image: url("../assets/wave-haikei-gray.svg");
 }
 
 .spacer2 {
@@ -110,7 +110,7 @@ main {
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
-	background-image: url("../images/wave-haikei-red.svg");
+	background-image: url("../assets/wave-haikei-red.svg");
 }
 
 .spacer3 {
@@ -119,7 +119,7 @@ main {
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
-	background-image: url("../images/wave-haikei-red2.svg");
+	background-image: url("../assets/wave-haikei-red2.svg");
 }
 
 section {
